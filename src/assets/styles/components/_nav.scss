@@ -1,33 +1,25 @@
-.nav {
-    &__menu {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-    }
-    &__link {
-        display: block;
-        padding: 0.5em 1em;
-    }
-    &__toggle {
-        @include button-reset;
-    }
+.navmain {
+display: flex;
+flex-direction: column;
 
-    @include mq-down(lg) {
-        &.is-open &__menu {
-            display: block;
-        }
-    }
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 
-    @include mq(lg) {
-        &__toggle {
-            display: none;
-        }
-        &__menu {
-            display: flex;
-            position: static;
-            background-color: transparent;
-        }
+    padding: .5rem 1rem;
+    border-top: 3px solid $black;
+
+    &:last-child {
+      border-bottom: 3px solid $black;
     }
+  }
+
+  .nav-plus {
+    font-size: 1.5em;
+    position: absolute;
+    top: .25rem;
+    right: .25rem;
+  }
+
 }

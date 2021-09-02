@@ -6,31 +6,31 @@
 // UTILITIES
 //--------------------
 
-@import 'utils/functions';
-@import 'utils/variables';
-@import 'utils/mixins';
+@import "utils/variables";
+@import "utils/breakpoints";
+@import "utils/animations";
+@import "utils/mixins";
+@import "utils/utils";
 
 //--------------------
 // BASE MODULES
 // partials with global scope
 //--------------------
 
-@import 'base/fonts';
 @import 'base/normalize';
-@import 'base/reboot';
-@import 'base/layout';
-@import 'base/typography';
-@import 'base/focus';
-@import 'base/utilities';
-@import 'base/screenreader';
-@import 'base/animation';
+@import "base/fonts";
+@import "base/type-sets";
+@import "base/base";
+@import "base/reboot";
+@import "base/screenreader";
+@import "base/focus";
+@import "base/layout";
 
 //--------------------
 // COMPONENTS
 // partials with local scope to a component
 //--------------------
 
-@import 'components/header';
-@import 'components/nav';
-@import 'components/footer';
-@import 'components/icon';
+@import "components/nav";
+@import "components/header";
+@import "components/footer";
