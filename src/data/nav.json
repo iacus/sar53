@@ -1,0 +1,10 @@
+{
+    "navLegal": [{
+      "title": "Legal advice",
+      "url": "/legal-advice"
+    },
+    {
+      "title": "Cookie Advice",
+      "url": "/cookie-advice"
+    }]
+}

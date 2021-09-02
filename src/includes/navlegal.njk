@@ -1,0 +1,12 @@
+<nav class="nav js-nav" role="navigation" tabindex="-1">
+
+    {# Nav Links  #}
+    <ul class="nav-menu js-nav-menu" id="nav-menu">
+      {% for item in nav.navLegal %}
+        <li class="nav-item">
+          <a class="nav-link dim" href="{{item.url}}">{{item.title}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+</nav>

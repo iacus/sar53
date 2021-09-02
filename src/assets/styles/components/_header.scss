@@ -1,14 +1,11 @@
 .header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
+  &-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  &-brand {
-
+    padding: 1rem;
   }
 
-  &-nav {
-
-  }
 }

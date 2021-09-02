@@ -1,0 +1,10 @@
+.footer {
+  background-color: $gray-light;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+  }
+}

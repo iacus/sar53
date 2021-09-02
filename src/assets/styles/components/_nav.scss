@@ -1,25 +1,13 @@
-.navmain {
-display: flex;
-flex-direction: column;
+.nav {
+  display: flex;
+  justify-content: space-between;
 
-  .nav-item {
+  &-menu {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-
-    padding: .5rem 1rem;
-    border-top: 3px solid $black;
-
-    &:last-child {
-      border-bottom: 3px solid $black;
-    }
   }
 
-  .nav-plus {
-    font-size: 1.5em;
-    position: absolute;
-    top: .25rem;
-    right: .25rem;
+  &-item:not(:last-child) {
+    margin-right: .5rem;
   }
 
 }
