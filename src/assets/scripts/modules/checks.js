@@ -35,6 +35,7 @@ export default class Checks {
   showBreakpoints () {
     if (this.config.BREAKPOINTS) {
       console.log('showing breakpoints');
+      document.querySelector('body').classList.add('debug')
       document.querySelector('body').classList.add('show-breakpoints');
 
       const getWidth = () => {
