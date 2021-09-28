@@ -1,4 +1,5 @@
-# Eleventastic
+# Eixo
+## Based on Eleventastic
 
 A simple Eleventy Starter Kit, my base for all new 11ty projects. ([Demo Site](https://eleventastic.netlify.com))
 
