@@ -9,8 +9,6 @@
     {% include "meta.njk" %}
 </head>
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-    {% iconsprite %}
-    <a href="#main" class="sr-skip-link">skip to main content</a>
 
     <div class="layout" role="document">
         {% include "header.njk" %}
@@ -26,5 +24,6 @@
             navigator.serviceWorker.register('/serviceworker.js')
         }
     </script>
+    {% include "../includes/cms.njk" %}
 </body>
 </html>

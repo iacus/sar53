@@ -1,7 +1,8 @@
 {
-    "title": "E I X O",
-    "description": "An Eleventy Starter Kit",
-    "url": "https://eleventastic.netlify.app",
-    "lang": "en",
-    "locale": "en_us"
+    "title": "SAR 53",
+    "description": "Somos un espazo de encontro e traballo no barrio compostelano de Sar.",
+    "url": "https://sar53.com",
+    "lang": "gl",
+    "locale": "gl",
+    "image": "/assets/images/og_image.png"
 }
