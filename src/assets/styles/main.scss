@@ -11,6 +11,8 @@
 @import "utils/animations";
 @import "utils/mixins";
 @import "utils/utils";
+@import "utils/grid";
+@import "utils/grid-framework";
 
 //--------------------
 // BASE MODULES
@@ -26,6 +28,14 @@
 @import "base/focus";
 @import "base/layout";
 @import "base/loader";
+@import "base/grid";
+
+//--------------------
+// VARIABLES
+// partials with global scope
+//--------------------
+
+@import 'variables/sizes';
 
 //--------------------
 // COMPONENTS

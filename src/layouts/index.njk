@@ -2,6 +2,73 @@
 layout: base
 ---
 
-<div class="container">
-    <h1 class="display-01">Index</h1>
+<section class="ly-default">
+    <div class="col-narrow sticky-top">
+        <p class="text-super title--rotate">
+            <a href="/">SAR</a>
+        </p>
+        <p class="text-super">
+            <a href="/">53</a>
+        </p>
+    </div>
+    <div class="col-wide">
+        {% for item in blocks %}
+            <div class="block">
+                <h3 class="block-title text-01">{{ item.title }}</h3>
+                <img class="block-image" src="{{ item.image }}" alt="{{ item.title }}">
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<section class="ly-default">
+    <div class="col-narrow sticky-top">
+        <h2 class="text-super title-rotate">TARIFAS</h2>        
+    </div>
+    <div class="col-wide">
+        {% for item in blocks %}
+            <div class="block">
+                <h3 class="text-01">{{ item.title }}</h3>
+                <img src="{{ item.image }}" alt="{{ item.title }}">
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="ly-default">
+    <div class="col-narrow sticky-top">
+        <h2 class="text-super title-rotate">CONTACTO</h2>        
+    </div>
+    <div class="col-wide">
+        {% for item in blocks %}
+            <div class="block">
+                <h3 class="text-01">{{ item.title }}</h3>
+                <img src="{{ item.image }}" alt="{{ item.title }}">
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{# <section>
+<div class="col-1">
+    <h2 class="text-01">TARIFAS</h2>
+    <p class="text-02">{{ text }}</p>
 </div>
+</section> #}
+
+{# <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sticky-top">
+            {{meta.title}}
+        </div>
+        <div class="col-md-9">
+            {% for item in blocks %}
+                <div class="block">
+                    <h3 class="display-01">{{ item.title }}</h3>
+                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div> #}

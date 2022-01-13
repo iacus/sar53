@@ -1,0 +1,23 @@
+:root {
+    --y-header: 0;
+  
+    --padding-xxl: #{(180px / 16px) * 1rem};
+    --padding-xl: #{(100px / 16px) * 1rem};
+    --padding-l: #{(64px / 16px) * 1rem};
+    --padding-m: #{(32px / 16px) * 1rem};
+    --padding-s: #{(16px / 16px) * 1rem};
+    --padding-xs: #{(10px / 16px) * 1rem};
+    --padding-xxs: #{(8px / 16px) * 1rem};
+  
+    --header-height:#{(233px / 16px) * 1rem};
+    --logo-height:#{(150px / 16px) * 1rem};
+  
+    --general-gap: var(--padding-s);
+  }
+  
+//   @media (max-width: $smartphone) {
+//     :root {
+//       --header-height:#{(132px / 16px) * 1rem};
+//     }
+//   }
+  

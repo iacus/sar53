@@ -11,7 +11,7 @@
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
     <div class="layout" role="document">
-        {% include "header.njk" %}
+        {# {% include "header.njk" %} #}
         <main id="swup" class="main transition-fade" tabindex="-1">
             {{ content | safe }}
         </main>
