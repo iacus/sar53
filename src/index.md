@@ -13,12 +13,11 @@ blocks:
   - title: Tampouco somos moito de ir a misa pero, dende aquí, escoitamos perfectamente as badaladas da Colexiata. 
     image: /assets/images/sar-53-04.jpg
   - title: Temos sala de reunións, cocina, baño, impresora, conexión a internet, etc… 
-    image: /assets/images/sar-53-05.jpg
     gallery:
-      - /assets/images/sar-53-06.jpg
-      - /assets/images/sar-53-07.jpg
-      - /assets/images/sar-53-08.jpg
-      - /assets/images/sar-53-09.jpg
+      - /assets/images/sar-53-05.jpg
+      - /assets/images/sar-53-02.jpg
+      - /assets/images/sar-53-03.jpg
+      - /assets/images/sar-53-04.jpg
 tarifas:
   - title: Somos un espazo de encontro e traballo no barrio compostelano de Sar.
     image: /assets/images/sar-53-01.jpg

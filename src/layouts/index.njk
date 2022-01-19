@@ -3,72 +3,34 @@ layout: base
 ---
 
 <section class="ly-default">
-    <div class="col-narrow sticky-top">
+    <div class="ly-col1">
         <p class="text-super title--rotate">
             <a href="/">SAR</a>
         </p>
-        <p class="text-super">
+        <p class="text-super title--rotate">
             <a href="/">53</a>
         </p>
     </div>
-    <div class="col-wide">
+    <div class="ly-col2">
         {% for item in blocks %}
             <div class="block">
                 <h3 class="block-title text-01">{{ item.title }}</h3>
-                <img class="block-image" src="{{ item.image }}" alt="{{ item.title }}">
+                {% if item.image %}
+                    <img class="block-image" src="{{ item.image }}" alt="{{ item.title }}">
+                {% endif %}
+
+                {% if item.gallery %}
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {% for image in item.gallery %}
+                                <div class="swiper-slide">
+                                    <img src="{{ image }}" alt="{{ item.title }}">
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         {% endfor %}
     </div>
 </section>
-
-
-<section class="ly-default">
-    <div class="col-narrow sticky-top">
-        <h2 class="text-super title-rotate">TARIFAS</h2>        
-    </div>
-    <div class="col-wide">
-        {% for item in blocks %}
-            <div class="block">
-                <h3 class="text-01">{{ item.title }}</h3>
-                <img src="{{ item.image }}" alt="{{ item.title }}">
-            </div>
-        {% endfor %}
-    </div>
-</section>
-
-<section class="ly-default">
-    <div class="col-narrow sticky-top">
-        <h2 class="text-super title-rotate">CONTACTO</h2>        
-    </div>
-    <div class="col-wide">
-        {% for item in blocks %}
-            <div class="block">
-                <h3 class="text-01">{{ item.title }}</h3>
-                <img src="{{ item.image }}" alt="{{ item.title }}">
-            </div>
-        {% endfor %}
-    </div>
-</section>
-
-{# <section>
-<div class="col-1">
-    <h2 class="text-01">TARIFAS</h2>
-    <p class="text-02">{{ text }}</p>
-</div>
-</section> #}
-
-{# <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 sticky-top">
-            {{meta.title}}
-        </div>
-        <div class="col-md-9">
-            {% for item in blocks %}
-                <div class="block">
-                    <h3 class="display-01">{{ item.title }}</h3>
-                    <img src="{{ item.image }}" alt="{{ item.title }}">
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div> #}

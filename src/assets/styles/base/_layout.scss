@@ -1,3 +1,4 @@
+
 .layout {
   min-height: 100vh;
   position: relative;
@@ -7,98 +8,48 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
+  padding: 1rem;
+  position: relative;
 }
-
 
 .ly-default {
-  --cols: 2;
-  --gap: var(--general-gap);
-  --padding-top: 0;
-  --padding-bottom: 0;
-  --padding-h: var(--padding-s);
-
-  min-height: calc(100vh - (var(--font-size-base) * var(--line-height-sans)) - (var(--padding-s) * 2));
-  padding: var(--padding-top) var(--padding-h) var(--padding-bottom);
+  --grid-columns: 2;
+  --grid-gutter-width: 1rem;
 
   display: grid;
-  grid-template-columns: 20% 80%;
-
-  &:not(.--grid-size-fixed) {
-    grid-auto-rows: min-content;
-    grid-column-gap: var(--gap);
-  }
-
-  &.--grid-size-fixed {
-    --padding-top: calc(var(--header-height) + var(--padding-xxl));
-    grid-gap: var(--gap);
-  }
-
-  &.--grid-project {
-    --padding-top: var(--padding-s);
-    grid-gap: var(--gap);
-  }
-
-  > .space {
-    grid-column-end: span 1;
-    padding-top: 100%;
-  }
+  grid-template-columns: 30% 70%;
+  grid-gap: var(--grid-gutter-width);
 }
 
-// @media (max-width: $tabletLandscape) {
-//   .default {
-//     --cols: 3;
-//   }
-// }
-
-// @media (max-width: $smartphone) {
-//   .default {
-//     --padding-h: var(--padding-xs);
-//     --padding-top: var(--header-height);
-
-//     &.--grid-size-fixed {
-//       --padding-top: var(--header-height);
-//       --cols: 2;
-//     }
-
-//     &.--grid-project {
-//       --padding-top: var(--header-height);
-
-//       .space {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
-
-.col-narrow{
-  height: 100vh;
-  min-height: 100vh;
+.ly-col1 {
   background-color: red;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: end;
+
+  @include media-breakpoint-up(md) {
+    position: sticky;
+    top: 1rem;
+  }
 }
 
+.ly-col2 {
+
+}
 
 .block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1 0 auto;
-  padding-bottom: var(--padding-xxl);
+  padding-bottom: 10rem;
 
   &-title {
-    padding-bottom: var(--padding-m);
-  }
-
-  &-image {
-    max-width: 80%;
+    padding-bottom: 2rem;
   }
 }
+
 
 
 .title--rotate {
-  // transform-origin: top left;
   transform: rotate(90deg);
+  transform-origin: 0 0;
 }
