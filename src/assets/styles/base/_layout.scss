@@ -8,26 +8,28 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  padding: 1rem;
   position: relative;
 }
 
-.ly-default {
+.grid {
   --grid-columns: 2;
   --grid-gutter-width: 1rem;
 
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr 5fr;
   grid-gap: var(--grid-gutter-width);
+
+  padding-left: var(--grid-gutter-width);
+  padding-right: var(--grid-gutter-width);
+  
 }
 
-.ly-col1 {
-  background-color: red;
-  height: 100vh;
+.-col1 {
+  height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
 
   @include media-breakpoint-up(md) {
     position: sticky;
@@ -35,15 +37,21 @@
   }
 }
 
-.ly-col2 {
-
+.-col2 {
+  padding-top: 1rem;
 }
 
 .block {
   padding-bottom: 10rem;
 
+
   &-title {
     padding-bottom: 2rem;
+    position: sticky;
+    top: 1rem;
+  }
+  &-image {
+    max-width: 80%;
   }
 }
 
