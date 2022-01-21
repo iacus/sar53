@@ -27,7 +27,7 @@ layout: base
         </p>
     </div>
     <div class="grid-col -col2">
-        {% for item in blocks %}
+        {% for item in presentation %}
             <div class="block">
                 <h3 class="block-title text-01">{{ item.title }}</h3>
                 {% if item.image %}
@@ -35,7 +35,7 @@ layout: base
                 {% endif %}
 
                 {% if item.gallery %}
-                    <div class="swiper-container">
+                    <div class="block-image swiper-container">
                         <div class="swiper-wrapper">
                             {% for image in item.gallery %}
                                 <div class="swiper-slide">
@@ -47,5 +47,13 @@ layout: base
                 {% endif %}
             </div>
         {% endfor %}
+    </div>
+</section>
+
+<section class="section-presentation">
+    <div class="grid-row">
+        <div class="grid-col -col1">
+            <h2 class="section-title text-01">{{tarifas.title}}</h2>
+        </div>
     </div>
 </section>

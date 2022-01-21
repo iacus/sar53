@@ -5,7 +5,7 @@ import viewportUnitsBuggyfill from 'viewport-units-buggyfill'
 import Debug from './modules/debug'
 import Checks from './modules/checks'
 import PageLoader from './modules/loader'
-// import Slider from './slider/slider'
+import Slider from './modules/slider'
 
 viewportUnitsBuggyfill.init()
 

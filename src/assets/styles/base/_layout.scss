@@ -16,7 +16,7 @@
   --grid-gutter-width: 1rem;
 
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   grid-gap: var(--grid-gutter-width);
 
   padding-left: var(--grid-gutter-width);
@@ -43,15 +43,20 @@
 
 .block {
   padding-bottom: 10rem;
-
+  width: auto;
 
   &-title {
     padding-bottom: 2rem;
     position: sticky;
     top: 1rem;
+    z-index: 1;
   }
   &-image {
-    max-width: 80%;
+    z-index: 2;
+    position: relative;
+    width: auto;
+    max-width: 75rem;
+    max-height: 90vh;
   }
 }
 

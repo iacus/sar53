@@ -2,7 +2,7 @@
 layout: index
 eleventyNavigation:
   key: Home
-blocks:
+presentation:
   - title: Somos un espazo de encontro e traballo no barrio compostelano de Sar.
     image: /assets/images/sar-53-01.jpg
     classText: absolute-sm-down
@@ -19,10 +19,13 @@ blocks:
       - /assets/images/sar-53-03.jpg
       - /assets/images/sar-53-04.jpg
 tarifas:
-  - title: Somos un espazo de encontro e traballo no barrio compostelano de Sar.
+  - title: Tarifas
+  - title: Posto fixo
+    price: 000€
     image: /assets/images/sar-53-01.jpg
     classText: absolute-sm-down
-  - title: O que ven sendo, un coworking.
+  - title: Posto flexible
+    price: 000€
     image: /assets/images/sar-53-02.jpg
   - title: Non somos un viveiro de empresas pero no noso xardín hai dúas árbores e temos intención de facer unha pequena horta.
     image: /assets/images/sar-53-03.jpg
