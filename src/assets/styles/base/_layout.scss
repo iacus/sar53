@@ -16,7 +16,7 @@
   --grid-gutter-width: 1rem;
 
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 20vw 80vw;
   grid-gap: var(--grid-gutter-width);
 
   padding-left: var(--grid-gutter-width);
@@ -60,7 +60,9 @@
   }
 }
 
-
+.logo svg{
+  height: 20vw;
+}
 
 .title--rotate {
   transform: rotate(90deg);

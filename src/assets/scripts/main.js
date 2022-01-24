@@ -13,7 +13,7 @@ const initFun = () => {
   new Debug().init()
   new Checks().init()
   new PageLoader().init()
-  // new Slider().init()
+  new Slider().init()
 }
 
 

@@ -12,7 +12,7 @@ presentation:
     image: /assets/images/sar-53-03.jpg
   - title: Tampouco somos moito de ir a misa pero, dende aquí, escoitamos perfectamente as badaladas da Colexiata. 
     image: /assets/images/sar-53-04.jpg
-  - title: Temos sala de reunións, cocina, baño, impresora, conexión a internet, etc… 
+  - title: Temos sala de reunións, cociña, baño, impresora, conexión a internet, etc… 
     gallery:
       - /assets/images/sar-53-05.jpg
       - /assets/images/sar-53-02.jpg

@@ -1,12 +1,12 @@
 'use strict'
 
 // core version + navigation, pagination modules:
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 // import Swiper and modules styles
-// import 'swiper/swiper-bundle.css';
+// import 'swiper/css'
 
 // configure Swiper to use modules
-// Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination]);
 
 export default class Slider {
   constructor () {
@@ -19,12 +19,9 @@ export default class Slider {
   slider () {
     var mySwiper = new Swiper('.swiper-container', {
       grabCursor: true,
-      spaceBetween: 15,
+      spaceBetween: 300,
 			slidesPerView: 1.5,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
+      loop: true,
       breakpoints: {
         768: {
         //   slidesPerView: 1.5,
