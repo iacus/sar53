@@ -2,6 +2,7 @@
 // MASTER STYLESHEET INDEX
 // ---------------------------------
 
+
 //--------------------
 // UTILITIES
 //--------------------
@@ -29,6 +30,12 @@
 @import "base/layout";
 @import "base/loader";
 // @import "base/grid";
+
+//--------------------
+// LIBRARIES
+//--------------------
+
+@import "lib/swiper.min.css";
 
 //--------------------
 // VARIABLES

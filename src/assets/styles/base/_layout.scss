@@ -16,8 +16,8 @@
   --grid-gutter-width: 1rem;
 
   display: grid;
-  grid-template-columns: 20vw 80vw;
-  grid-gap: var(--grid-gutter-width);
+  grid-template-columns: 10vw 80vw;
+  grid-gap: 10rem;
 
   padding-left: var(--grid-gutter-width);
   padding-right: var(--grid-gutter-width);
@@ -61,10 +61,25 @@
 }
 
 .logo svg{
-  height: 20vw;
+  // height: 20vw;
 }
 
 .title--rotate {
   transform: rotate(90deg);
-  transform-origin: 0 0;
+  transform-origin: bottom top;
+}
+
+.title--rotate-90 {
+  transform: rotate(-90deg);
+  transform-origin: top top;
+}
+
+
+.grid-50 {
+  --grid-columns: 2;
+  --grid-gutter-width: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(--grid-columns, 1fr);
+  grid-gap: var(--grid-gutter-width);
 }

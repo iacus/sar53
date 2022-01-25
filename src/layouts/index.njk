@@ -34,7 +34,7 @@ layout: base
                     <img class="block-image" src="{{ item.image }}" alt="{{ item.title }}">
                 {% endif %}
 
-                {% if item.gallery %}
+                {# {% if item.gallery %}
                     <div class="block-image swiper-container">
                         <div class="swiper-wrapper">
                             {% for image in item.gallery %}
@@ -44,16 +44,23 @@ layout: base
                             {% endfor %}
                         </div>
                     </div>
-                {% endif %}
+                {% endif %} #}
             </div>
         {% endfor %}
     </div>
 </section>
 
-<section class="section-presentation">
-    <div class="grid-row">
-        <div class="grid-col -col1">
-            <h2 class="section-title text-01">{{tarifas.title}}</h2>
-        </div>
+<section class="grid grid-50 section-b">
+    <div class="grid-col -col1">
+        <p class="title--rotate text-super">
+            Tarifas
+        </p>
+    </div>
+    <div class="grid-col -col2">
+        {% for item in tarifas[0].blocks %}
+                <div class="block">
+                    <h3 class="block-title text-01">{{ item.title }}</h3>
+                </div>
+        {% endfor %}
     </div>
 </section>
