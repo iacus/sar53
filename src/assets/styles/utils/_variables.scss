@@ -98,25 +98,30 @@ $my-type: () !default;
 
 $my-type-set: map-merge(
   (
-
     "text-super": (
         "family": $font-family-sans-serif,
         "weight": $font-weight-base,
-        "size": 4rem,
-        "size-md": 10rem,
+        "size": 5.5rem,
         "lh": .3,
+        "tt": uppercase
     ),
     "text-01": (
         "family": $font-family-sans-serif,
         "weight": $font-weight-base,
-        "size": 5.5rem,
+        "size": 3rem,
+        "size-sm": 4rem,
+        "size-md": 4.5rem,
+        "size-lg": 5.5rem,
         "lh": .7,
     ),
     "text-02": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
-      "size": 4.5rem,
-      "lh": 1.15,
+      "size": 2.5rem,
+      "size-sm": 3rem,
+      "size-md": 3.5rem,
+      "size-lg": 4.5rem,
+      "lh": .7,
     ),
     "text-03": (
       "family": $font-family-sans-serif,
@@ -136,3 +141,18 @@ $my-type-set: map-merge(
 
 // Z-index
 $zindex-fixed: 10004;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           1.5rem;
+$grid-row-columns:            6;
+
+$gutters: $spacers;
+
+// Container padding
+
+$container-padding-x: $grid-gutter-width * .5;

@@ -2,18 +2,20 @@
 // MASTER STYLESHEET INDEX
 // ---------------------------------
 
+@import "bs/bootstrap";
 
 //--------------------
 // UTILITIES
 //--------------------
 
 @import "utils/variables";
-@import "utils/breakpoints";
+// @import "utils/breakpoints";
 @import "utils/animations";
 @import "utils/mixins";
 @import "utils/utils";
-// @import "utils/grid";
-// @import "utils/grid-framework";
+
+@import "utils/grid";
+
 
 //--------------------
 // BASE MODULES
@@ -29,13 +31,6 @@
 @import "base/focus";
 @import "base/layout";
 @import "base/loader";
-// @import "base/grid";
-
-//--------------------
-// LIBRARIES
-//--------------------
-
-@import "lib/swiper.min.css";
 
 //--------------------
 // VARIABLES
@@ -53,3 +48,4 @@
 @import "components/header";
 @import "components/footer";
 @import "components/slider";
+@import "components/logo";

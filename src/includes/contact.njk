@@ -1,0 +1,36 @@
+<section class="grid">
+
+  {# Narrow column #}
+  <div class="g-col-12 g-col-sm-2">
+    <div class="sticky svg-wrapper d-none d-sm-block">
+      {% include "../includes/partials/contact-title.njk" %}
+    </div>
+    <h2 class="text-super d-block d-sm-none">Contacto</h2>
+  </div>
+
+  {# Wide column #}
+  <div class="g-col-12 g-col-sm-10 g-col-sm-9 g-start-md-4">
+
+
+
+      <div class="block">
+
+        {% if contact.image %}
+          {% image "src/"+contact.image , "block-image img-contain", contact.title, "(min-width: 30em) 50vw, 100vw" %}
+        {% endif %}
+
+        {% if contact.title %}
+          <h3 class="block-title text-01">{{ contact.title|safe }}</h3>
+        {% endif %}
+
+        {% if contact.iframe %}
+        <div class="embed-responsive embed-responsive-16by9">
+          {{contact.iframe|safe}}
+        </div>
+
+        {% endif %}
+
+      </div>
+
+  </div>
+</section>

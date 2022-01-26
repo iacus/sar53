@@ -1,0 +1,44 @@
+<section class="grid">
+
+  {# Narrow column #}
+  <div class="g-col-12 g-col-sm-2">
+    <div class="logo-wrapper sticky">
+      <div class="svg-wrapper logo-name">
+        {% include "../includes/partials/logo-name.njk" %}
+      </div>
+      <div class="svg-wrapper logo-number">
+        {% include "../includes/partials/logo-number.njk" %}
+      </div>
+    </div>
+  </div>
+
+  {# Wide column #}
+  <div class="g-col-12 g-col-sm-10 g-col-sm-9 g-start-md-4">
+    {% for item in presentation %}
+      <div class="block">
+
+        {% if item.title %}
+          <h3 class="block-title text-01">{{ item.title }}</h3>
+        {% endif %}
+
+        {% if item.image %}
+          {% image "src/"+item.image , "block-image img-contain", item.title, "(min-width: 30em) 50vw, 100vw" %}
+        {% endif %}
+
+        {% if item.gallery %}
+          <div class="block-image swiper-container">
+            <div class="swiper-wrapper">
+              {% for image in item.gallery %}
+                <div class="swiper-slide">
+                  <img src="{{ image }}" alt="{{ item.title }}">
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+      </div>
+    {% endfor %}
+
+  </div>
+</section>

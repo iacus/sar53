@@ -7,6 +7,30 @@ const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const shortcodes = require('./utils/shortcodes.js')
 
+const Image = require("@11ty/eleventy-img");
+
+async function imageShortcode(src, klass, alt, sizes) {
+  let metadata = await Image(src, {
+    widths: [300, 600, 1000, 1500],
+    formats: ["webp", "jpeg"],
+    outputDir: "./dist/images",
+    urlPath: "/images/",
+    useCache: true
+  });
+
+  let imageAttributes = {
+    class: klass,
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
+
 module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
@@ -15,6 +39,8 @@ module.exports = function (config) {
         path: "./src/assets/icons",
         svgSpriteShortcode: "iconsprite"
     })
+
+    config.addNunjucksAsyncShortcode("image", imageShortcode);
 
     // Filters
     Object.keys(filters).forEach((filterName) => {

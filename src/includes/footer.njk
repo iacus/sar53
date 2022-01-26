@@ -1,11 +1,14 @@
-<footer class="footer" role="contentinfo">
-    
-    <div class="footer-inner container">
-        <span>&copy; copyright {{ build.timestamp | dateToFormat('yyyy') }}</span>
+<footer class="grid footer" role="contentinfo">
 
-        <p class="text-super">SAR </p>
-        <p class="text-super title--rotate-90">53</p>
+    <div class="g-col-12 g-col-sm-10 g-col-sm-9 g-start-md-4 d-flex justify-content-between">
+        <span>&copy; copyright {{ build.timestamp | dateToFormat('yyyy') }}</span>
+        <p></p>
+        {% for item in creditos %}
+          {{item.title|safe}}
+        {% endfor %}
+        {# <p class="text-super">SAR </p>
+        <p class="text-super title--rotate-90">53</p> #}
         {# Nav Links  #}
-        {% include "navlegal.njk" %}
+        {# {% include "navlegal.njk" %} #}
     </div>
 </footer>

@@ -19,9 +19,24 @@
   min-height: 100%;
 }
 
+.img-contain{
+  object-fit: contain;
+  height: auto;
+}
+
 // Cover Fit Picture version
 picture.img-fit{
   object-fit: cover;
+  min-height: 100%;
+
+  img {
+    height: 100%;
+  }
+}
+
+// Contain Picture version
+picture.img-contain{
+  object-fit: contain;
   min-height: 100%;
 
   img {
@@ -33,7 +48,7 @@ picture.img-fit{
   overflow-y: hidden;
 }
 
-.sticky-top {
+.sticky {
   position: sticky;
-  top: 0;
+  top: 1rem;
 }
