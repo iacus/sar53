@@ -1,5 +1,5 @@
 .logo-wrapper {
-  height: calc(50vh - 2rem);
+  height: 10rem;
   display: flex;
 
   justify-content: space-between;
@@ -9,26 +9,19 @@
 
   @include media-breakpoint-up(sm) {
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 2rem);
 
     padding-top: 0rem;
-    padding-bottom: 2rem;
   }
 }
-
 
 .svg-wrapper {
-  max-width: 4rem;
+  max-width: 2rem;
 
   @include media-breakpoint-up (sm) {
-    max-width: 6rem;
+    max-width: 5rem;
   }
-}
-
-.svg-wrapper--small {
-  max-width: 4rem;
-
-  @include media-breakpoint-up (sm) {
+  @include media-breakpoint-up (xl) {
     max-width: 5rem;
   }
 }

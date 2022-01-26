@@ -19,9 +19,8 @@ export default class Slider {
   slider () {
     var mySwiper = new Swiper('.swiper-container', {
       grabCursor: true,
-      spaceBetween: 300,
-			slidesPerView: 1.5,
-      loop: true,
+      spaceBetween: 80,
+			slidesPerView: 1.2,
       breakpoints: {
         768: {
         //   slidesPerView: 1.5,
@@ -36,8 +35,8 @@ export default class Slider {
         //   spaceBetween: 15
         },
         2000: {
-        //   slidesPerView: 3.5,
-        //   spaceBetween: 15
+          spaceBetween: 200,
+    			slidesPerView: 1.2,
         }
       }
     })

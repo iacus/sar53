@@ -1,31 +1,16 @@
-<section class="grid">
-
-  {# Narrow column #}
-  <div class="g-col-12 g-col-sm-2">
-    <div class="sticky svg-wrapper d-none d-sm-block">
-      {% include "../includes/partials/pricing-title.njk" %}
-    </div>
-
-    <h2 class="text-super d-block d-sm-none">Tarifas</h2>
-  </div>
-
-  {# Wide column #}
-  <div class="g-col-12 g-col-sm-10 g-col-sm-9 g-start-md-4">
-
-    {% for item in tarifas %}
+<section>
+    {% if tarifas.title %}
+      <h2 class="section-title text-super">{{tarifas.title}}</h2>
+    {% endif %}
       <div class="block">
 
-        {% if item.title %}
-          <h3 class="block-title text-01">{{ item.title|safe }}</h3>
-        {% endif %}
-
-        {% if item.image %}
-          {% image "src/"+item.image , "block-image img-contain", item.title, "(min-width: 30em) 50vw, 100vw" %}
+        {% if tarifas.description %}
+          <h3 class="mb-5 text-01">{{ tarifas.description|safe }}</h3>
         {% endif %}
 
         <div class="grid">
-          {% for price in item.prices %}
-            <article class="g-col-12 g-col-md-6">
+          {% for price in tarifas.prices %}
+            <article class="g-col-6 g-col-md-6">
               <p class="text-01">{{price.title}} <br>{{price.price}} </p>
               <span>{{price.adv}}</span>
               <ul>
@@ -39,7 +24,5 @@
 
 
       </div>
-    {% endfor %}
 
-  </div>
 </section>

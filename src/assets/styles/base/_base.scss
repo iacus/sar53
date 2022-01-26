@@ -23,8 +23,7 @@
 
 html {
   box-sizing: border-box;
-  // @include fluid-type(576px, 2400px, 18px, 25px);
-  font-size: 19px;
+  font-size: clamp(1rem, 2vw, 2rem) !important;
   height: auto;
 }
 

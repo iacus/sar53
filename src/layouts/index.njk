@@ -4,14 +4,34 @@ layout: base
 
 <div class="container-fluid">
 
-  {# Presentation #}
-  {% include "../includes/presentation.njk" %}
+  <div class="grid">
 
-  {# Pricing #}
-  {% include "../includes/pricing.njk" %}
+    {# Narrow column #}
+    <div class="g-col-12 g-col-sm-2">
+      <div class="logo-wrapper sticky">
+        <div class="svg-wrapper logo-name">
+          {% include "../includes/partials/logo-name.njk" %}
+        </div>
+        <div class="svg-wrapper logo-number">
+          {% include "../includes/partials/logo-number.njk" %}
+        </div>
+      </div>
+    </div>
 
-  {# Contact #}
-  {% include "../includes/contact.njk" %}
+    {# Wide column #}
+    <div class="g-col-12 g-col-sm-10 g-start-md-3">
+      {# Presentation #}
+      {% include "../includes/presentation.njk" %}
+
+      {# Pricing #}
+      {% include "../includes/pricing.njk" %}
+
+      {# Contact #}
+      {% include "../includes/contact.njk" %}
+    </div>
+
+  </div>
+
 
 
 </div>
