@@ -1,9 +1,12 @@
-<section>
+<section class="mt-3">
   {% for item in presentation %}
     <div class="block">
 
       {% if item.title %}
-        <h3 class="block-title text-01">{{ item.title }}</h3>
+      <div class="block-title">
+        <h3 class=" text-01">{{ item.title }}</h3>
+      </div>
+
       {% endif %}
 
       {% if item.image %}
@@ -11,13 +14,15 @@
       {% endif %}
 
       {% if item.gallery %}
-        <div class="block-image swiper-container">
-          <div class="swiper-wrapper">
-            {% for image in item.gallery %}
-              <div class="swiper-slide">
-                {% image "src/"+image , "block-image img-contain", item.title, "(min-width: 30em) 50vw, 100vw" %}
-              </div>
-            {% endfor %}
+        <div class="block-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              {% for image in item.gallery %}
+                <div class="swiper-slide">
+                  {% image "src/"+image , "block-image img-contain", item.title, "(min-width: 30em) 50vw, 100vw" %}
+                </div>
+              {% endfor %}
+            </div>
           </div>
         </div>
       {% endif %}

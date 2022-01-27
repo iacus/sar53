@@ -5,10 +5,10 @@
       <div class="block">
 
         {% if tarifas.description %}
-          <h3 class="mb-5 text-01">{{ tarifas.description|safe }}</h3>
+          <h3 class="g-col-12 mb-5 text-01">{{ tarifas.description|safe }}</h3>
         {% endif %}
 
-        <div class="grid">
+        <div class="g-col-12 grid">
           {% for price in tarifas.prices %}
             <article class="g-col-6 g-col-md-6">
               <p class="text-01">{{price.title}} <br>{{price.price}} </p>

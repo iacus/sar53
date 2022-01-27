@@ -22,23 +22,40 @@
 .block {
   margin-bottom: 10vw;
   width: auto;
+  display: grid;
+  grid-template-rows: repeat(var(--bs-rows, 1), 1fr);
+  grid-template-columns: repeat(var(--bs-columns, 12), 1fr);
+  gap: var(--bs-gap, 1rem);
 
   &-title {
-    margin-bottom: 3vw;
-    position: sticky;
-    top: 1rem;
+    // margin-bottom: 3vw;
     z-index: 1;
+    grid-column: auto/span 12;
+    position: sticky;
+    top:1rem;
+
+  }
+
+  picture {
+    grid-column: auto/span 9;
   }
 
   &-image {
     z-index: 2 !important;
     position: relative !important;
     max-height: 90vh;
-    width: auto;
+    // width: auto;
+
 
     @include media-breakpoint-up (md) {
-      max-width: 80vw;
+
     }
+  }
+
+  &-slider {
+    overflow-x: hidden;
+
+    grid-column: auto/span 12;
   }
 
 }
