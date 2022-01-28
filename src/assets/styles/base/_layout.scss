@@ -57,7 +57,7 @@
   }
 
   // image wrapper
-  picture,
+  picture img,
   &-slider img {
 
     @include media-breakpoint-up (md) {
@@ -68,7 +68,33 @@
   &-image {
     z-index: 2 !important;
     position: relative !important;
-    max-width: 100vw;
+    max-width: 90vw;
+
+    @include media-breakpoint-up (sm) {
+      max-width: 73vw;
+    }
+
+    @include media-breakpoint-up (md) {
+      max-width: 73vw;
+    }
+
+    @include media-breakpoint-up (lg) {
+      max-width: 70vw;
+    }
+
+    @include media-breakpoint-up (xl) {
+      max-width: 60vw;
+    }
+  }
+
+  &-map {
+    z-index: 2 !important;
+    position: relative !important;
+    max-width: 90vw;
+
+    @include media-breakpoint-up (sm) {
+      max-width: 90vw;
+    }
 
     @include media-breakpoint-up (md) {
       max-width: 80vw;
