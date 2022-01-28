@@ -128,6 +128,13 @@ $my-type-set: map-merge(
       "size": 2.5rem,
       "size-md": 2rem,
       "lh": .7,
+    ),
+    "text-04": (
+      "family": $font-family-sans-serif,
+      "weight": $font-weight-base,
+      "size": 1rem,
+      "size-md": 1rem,
+      "lh": .7,
     )
   ),
   $my-type

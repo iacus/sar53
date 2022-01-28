@@ -13,12 +13,25 @@
 
 .section {
   padding-bottom: 1vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-  @include media-breakpoint-down (sm) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  @include media-breakpoint-up (sm) {
+    padding-left: 0rem;
   }
 }
+
+.section--no-space-sm {
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    .block-title,
+    .block-image {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+}
+
 
 .section-title {
   margin-bottom: 3vw;
@@ -44,19 +57,17 @@
   }
 
   // image wrapper
-  // picture {
-  //   grid-column: auto/span 12;
-  //
-  //   @include media-breakpoint-up (md) {
-  //     grid-column: auto/span 9;
-  //     max-width: 60vw;
-  //   }
-  // }
+  picture,
+  &-slider img {
+
+    @include media-breakpoint-up (md) {
+      max-height: 100vh;
+    }
+  }
 
   &-image {
     z-index: 2 !important;
     position: relative !important;
-    // max-height: 90vh;
     max-width: 100vw;
 
     @include media-breakpoint-up (md) {
@@ -87,20 +98,14 @@
 
 }
 
-
-// a{
-//   font-family: $font-family-serif !important;
-//   font-size: 4vw;
-//
-//   @include media-breakpoint-up (md) {
-//     font-size: 4vw;
-//   }
-// }
-
 .mb-image {
   margin-bottom: 10vw;
 }
 
 .fake-arroba{
-  font-size: 5.5vw;
+  font-size: .7em;
+}
+
+.pr-1 {
+  padding-right: 1rem;
 }

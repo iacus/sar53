@@ -12,7 +12,7 @@ presentation:
     gallery:
       - /assets/images/xardin-1.jpg
       - /assets/images/xardin-2.jpg
-  - title: Tampouco somos moito de ir a misa pero, dende aquí, escoitamos perfectamente as badaladas da Colexiata.
+  - title:  Tampouco imos moito a misa pero dende aquí escóitanse moi ben as badaladas da Colexiata.
     image: /assets/images/sar-53-04.jpg
   - title: Temos sala de reunións, cociña, baño, impresora, conexión a internet, etc…
     gallery:
@@ -22,7 +22,7 @@ presentation:
       - /assets/images/SAR53_foto_Luis_Diaz_Diaz_09.jpg
 tarifas:
   title: Tarifas
-  description: Se queres vir traballar aquí ou organizar algunha actividade no noso espazo, escríbenos a <a href="mailto:info@sar53.com">info<span class="fake-arroba">@</span>sar53.com</a>
+  description: Se queres vir traballar aquí ou organizar algunha actividade no noso espazo, escríbenos a <a href="mailto:espazo@sar53.com">espazo<span class="fake-arroba">@</span>sar53.com</a>
   prices:
     - title: Posto fixo
       price: 170e
@@ -48,13 +48,13 @@ tarifas:
           - title: Acceso a zonas comúns (cocina e xardín)
 contact:
   image: /assets/images/sar-53-01.jpg
-  title: Estamos na Rúa de Sar 35, En Santiago de Compostela (15702) A Coruña.
+  title: Estamos na Rúa de Sar 53, En Santiago de Compostela (15702) A Coruña.
   iframe: <iframe class="embed-responsive-item" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=rua%20de%20sar%2053+(Sar%2053%20Espazo)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a></iframe>
   social:
       - title: instagram
         url: https://www.instagram.com/sar____53/
 creditos:
-  - title: Fotos_ <a href="http://www.luisdiazdiaz.com/" target="_blank">Luís Díaz Díaz</a>
-  - title: Web_ <a href="https://iagobarreiro.com/" target="_blank">Iago Barreiro</a> (<a href="https://novagarda.gal/" target="_blank">Novagarda</a>)
-  - title: Tipografía_ <a href="https://iagobarreiro.com/" target="_blank">Fontdevila (BRNRD)</a>
+  - title: Fotos <a href="http://www.luisdiazdiaz.com/" target="_blank">Luís Díaz Díaz</a>
+  - title: Web <a href="https://iagobarreiro.com/" target="_blank">Iago Barreiro</a> (<a href="https://novagarda.gal/" target="_blank">Novagarda</a>)
+  - title: Tipografía <a href="https://www.pazcodesido.com/" target="_blank">Fontdevila (BRNRD)</a>
 ---

@@ -7,12 +7,14 @@
 
   padding-top: 1rem;
   padding-left: .5rem;
+  padding-right: 1rem;
 
   @include media-breakpoint-up(sm) {
     flex-direction: column;
     height: calc(100vh - 2rem);
 
     padding-top: 0rem;
+    padding-right: 0rem;
   }
 }
 
