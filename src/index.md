@@ -55,6 +55,6 @@ contact:
         url: https://www.instagram.com/sar____53/
 creditos:
   - title: Fotos <a href="http://www.luisdiazdiaz.com/" target="_blank">Luís Díaz Díaz</a>
-  - title: Web <a href="https://iagobarreiro.com/" target="_blank">Iago Barreiro</a> (<a href="https://novagarda.gal/" target="_blank">Novagarda</a>)
+  - title: Deseño <a href="https://iagobarreiro.com/" target="_blank">Iago Barreiro</a> (<a href="https://novagarda.gal/" target="_blank">Novagarda</a>)
   - title: Tipografía <a href="https://www.pazcodesido.com/" target="_blank">Fontdevila (BRNRD)</a>
 ---

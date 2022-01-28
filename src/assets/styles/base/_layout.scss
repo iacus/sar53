@@ -62,7 +62,7 @@
     z-index: 2 !important;
     position: relative !important;
   }
-  
+
   picture img,
   &-slider img {
 
@@ -120,6 +120,9 @@
     position: relative !important;
 
     grid-column: auto/span 12;
+    padding-right: 2rem;
+
+
   }
 
   a {

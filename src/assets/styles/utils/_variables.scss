@@ -101,7 +101,8 @@ $my-type-set: map-merge(
     "text-super": (
         "family": $font-family-sans-serif,
         "weight": $font-weight-base,
-        "size": 12vw,
+        "size": 15vw,
+        "size-sm": 12vw,
         "size-xl": 15vw,
         "lh": .7,
         "tt": uppercase
