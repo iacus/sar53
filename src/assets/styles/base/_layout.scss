@@ -58,9 +58,11 @@
 
   // image wrapper
 
-  picture {
+  picture,
+  picture img {
     z-index: 2 !important;
     position: relative !important;
+    transform: translate3d(0,0,0);
   }
 
   picture img,
