@@ -9,18 +9,20 @@ presentation:
   - title: O que ven sendo, un coworking.
     image: /assets/images/sar-53-02.jpg
   - title: Non somos un viveiro de empresas pero no noso xardín hai dúas árbores e temos intención de facer unha pequena horta.
-    image: /assets/images/sar-53-03.jpg
+    gallery:
+      - /assets/images/xardin-1.jpg
+      - /assets/images/xardin-2.jpg
   - title: Tampouco somos moito de ir a misa pero, dende aquí, escoitamos perfectamente as badaladas da Colexiata.
     image: /assets/images/sar-53-04.jpg
   - title: Temos sala de reunións, cociña, baño, impresora, conexión a internet, etc…
     gallery:
       - /assets/images/sar-53-05.jpg
-      - /assets/images/sar-53-02.jpg
-      - /assets/images/sar-53-03.jpg
-      - /assets/images/sar-53-04.jpg
+      - /assets/images/SAR53_foto_Luis_Diaz_Diaz_04b.jpg
+      - /assets/images/SAR53_foto_Luis_Diaz_Diaz_06.jpg
+      - /assets/images/SAR53_foto_Luis_Diaz_Diaz_09.jpg
 tarifas:
   title: Tarifas
-  description: Se queres vir traballar aquí ou organizar algunha actividade no noso espazo, escríbenos a <a href="mailto:info@sar53.com">info@sar53.com</a>
+  description: Se queres vir traballar aquí ou organizar algunha actividade no noso espazo, escríbenos a <a href="mailto:info@sar53.com">info<span class="fake-arroba">@</span>sar53.com</a>
   prices:
     - title: Posto fixo
       price: 170e

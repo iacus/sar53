@@ -6,6 +6,7 @@
   align-items: start;
 
   padding-top: 1rem;
+  padding-left: .5rem;
 
   @include media-breakpoint-up(sm) {
     flex-direction: column;
@@ -16,12 +17,15 @@
 }
 
 .svg-wrapper {
-  max-width: 2rem;
+  max-width: 3rem;
 
   @include media-breakpoint-up (sm) {
     max-width: 5rem;
   }
-  @include media-breakpoint-up (xl) {
+  @include media-breakpoint-up (lg) {
     max-width: 5rem;
+  }
+  @include media-breakpoint-up (xl) {
+    max-width: 4.5rem;
   }
 }
