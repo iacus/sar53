@@ -3,6 +3,7 @@
   grid-gap: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  align-items: self-end;
 
   @include media-breakpoint-up (sm) {
     padding-left: 0rem;
@@ -11,14 +12,18 @@
   &-credits {
     display: flex;
     flex-direction: column;
+    text-align: right;
+    padding-right: 0;
 
-    @include media-breakpoint-up (sm) {
+    @include media-breakpoint-up (md) {
       flex-direction: row;
       justify-content: flex-end;
+
+      li:not(:last-child) {
+        padding-right: .75rem;
+      }
     }
 
-    li:not(:last-child) {
-      padding-right: .75rem;
-    }
+
   }
 }
