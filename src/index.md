@@ -12,7 +12,7 @@ presentation:
     gallery:
       - /assets/images/xardin-1.jpg
       - /assets/images/xardin-2.jpg
-  - title:  Tampouco imos moito a misa pero dende aquí escóitanse moi ben as badaladas da Colexiata.
+  - title:  Dende as nosas mesas escóitanse moi ben as badaladas da Colexiata.
     image: /assets/images/sar-53-04.jpg
   - title: Temos sala de reunións, cociña, baño, impresora, conexión a internet, etc…
     gallery:
@@ -41,7 +41,7 @@ tarifas:
       adv: ive non incluído
       image: /assets/images/sar-53-02.jpg
       services:
-          - title: Acceso de luns a venres (mañá ou tarde)
+          - title: Acceso media xornada de luns a venres
           - title: Mesa común
           - title: Sala de reunións
           - title: Fibra óptica 500Mb por WIFI
