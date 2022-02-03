@@ -50,7 +50,7 @@ tarifas:
 contact:
   image: /assets/images/sar-53-01.jpg
   title: Se queres vir traballar ou organizar algunha actividade no noso espazo, escríbenos a <a href="mailto:espazo@sar53.com" target="_blank">espazo<span class="fake-arroba">@</span>sar53.com</a> ou pásate por aquí. <br><br>Estamos na Rua de Sar 53, en Santiago de Compostela. Tamén en <a href="https://www.instagram.com/sar____53/" target="_blank">Instagram</a>.
-  iframe: <iframe class="embed-responsive-item" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=rua%20de%20sar%2053+(Sar%2053%20Espazo)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a></iframe>
+  iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11695.93024908927!2d-8.545303130224635!3d42.873212200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efffac22d20c5%3A0x1c68179ed903afbb!2sSar53%20coworking!5e0!3m2!1ses!2ses!4v1643894449724!5m2!1ses!2ses" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   social:
       - title: instagram
         url: https://www.instagram.com/sar____53/
